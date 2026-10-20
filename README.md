@@ -27,7 +27,6 @@ The project combines computer vision capabilities with a modern dashboard design
 - Pillow
 - NumPy
 
-*Confirm the libraries and model versions used by your current environment before publishing a definitive dependency list.*
 
 ## 📁 Project Structure
 
@@ -47,8 +46,6 @@ VisionAI_Studio/
 └── README.md
 ```
 
-Some folders may contain local assets, generated results, or model files that are not included in the public repository.
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
@@ -67,13 +64,9 @@ source .venv/bin/activate
 
 ### 3. Install dependencies
 
-If your project contains a `requirements.txt` file, run:
-
 ```bash
 pip install -r requirements.txt
 ```
-
-If that file is not present, install the dependencies specified by your project before running the application. A requirements file can be created from a verified working environment.
 
 ### 4. Run the application
 
@@ -110,8 +103,6 @@ Potential enhancements include:
 - Optical character recognition (OCR)
 - Detection history and advanced analytics
 - Deployment and API integration
-
-These are planned enhancements, not a claim that every feature is currently implemented.
 
 ## 👩‍💻 Author
 
