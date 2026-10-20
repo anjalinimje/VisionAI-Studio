@@ -1,0 +1,929 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+html,
+body,
+[class*="css"]{
+    font-family:'Inter',sans-serif;
+}
+
+/* ===========================
+   VisionAI Studio Theme
+=========================== */
+
+:root{
+
+--primary:#8B5CF6;
+--secondary:#6D28D9;
+--accent:#3B82F6;
+
+--bg:#070B18;
+--card:#111827;
+--glass:rgba(255,255,255,.05);
+
+--border:rgba(255,255,255,.08);
+
+--text:#F8FAFC;
+
+--muted:#9CA3AF;
+
+--success:#22C55E;
+
+--danger:#EF4444;
+
+--warning:#F59E0B;
+
+--radius:20px;
+
+--purple:#8B5CF6;
+
+--pink:#C026D3;
+
+--blue:#3B82F6;
+
+--glow:
+
+0 0 20px rgba(139,92,246,.4);
+
+}
+
+/* ============
+    Main App 
+=============*/
+
+.stApp{
+
+background:
+radial-gradient(circle at top right,
+rgba(124,58,237,.18),
+transparent 30%),
+
+radial-gradient(circle at bottom left,
+rgba(59,130,246,.12),
+transparent 25%),
+
+linear-gradient(
+180deg,
+#050816 0%,
+#0A1024 50%,
+#060814 100%
+);
+
+color:white;
+
+}
+
+/* ==========
+    Sidebar 
+==============*/
+
+section[data-testid="stSidebar"]{
+
+background:
+
+linear-gradient(
+180deg,
+#090D18,
+#10172E
+);
+
+border-right:
+
+1px solid rgba(255,255,255,.06);
+
+}
+
+/* ===========
+    Header 
+==============*/
+
+h1{
+
+font-size:56px;
+
+font-weight:800;
+
+color:white;
+
+margin-bottom:10px;
+
+}
+
+h2{
+
+font-size:34px;
+
+font-weight:700;
+
+color:white;
+
+}
+
+h3{
+
+font-size:28px;
+
+font-weight:600;
+
+color:white;
+
+}
+
+p{
+
+color:#B5BFD5;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+/* ===========
+    Gradient Text
+==============*/
+
+.gradient{
+
+background:
+
+linear-gradient(
+90deg,
+#7C3AED,
+#A855F7,
+#3B82F6
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+/* ===========================
+   KPI Card
+=========================== */
+
+.kpi-card{
+    background: rgba(17,24,39,0.75);
+    backdrop-filter: blur(18px);
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+    padding:22px;
+
+    text-align:center;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.35);
+
+    transition:.35s;
+}
+
+.kpi-card:hover{
+
+transform:
+translateY(-8px)
+scale(1.02);
+
+border:
+1px solid rgba(168,85,247,.45);
+
+box-shadow:
+
+0 0 35px rgba(168,85,247,.35);
+
+}
+
+.kpi-icon{
+    font-size:40px;
+}
+
+.kpi-title{
+    font-size:18px;
+    font-weight:600;
+    color:#E5E7EB;
+    margin-top:8px;
+}
+
+.kpi-value{
+    font-size:38px;
+    font-weight:bold;
+    color:#A855F7;
+    margin-top:12px;
+}
+
+.kpi-subtitle{
+    color:#9CA3AF;
+    font-size:14px;
+    margin-top:8px;
+}
+
+/* ===========================================
+   HERO BANNER
+=========================================== */
+
+
+
+.hero-title{
+
+    font-size:42px;
+
+    font-weight:700;
+
+}
+
+.hero-subtitle{
+
+    font-size:20px;
+
+    opacity:.95;
+
+    margin-top:10px;
+
+}
+
+.hero-small{
+
+    font-size:14px;
+
+    opacity:.8;
+
+}
+
+.hero-container {
+    margin-top: -10px;
+}
+
+
+
+.stButton > button{
+
+    width:100%;
+
+    background:transparent !important;
+    border:none !important;
+
+    color:#FFFFFF !important;
+
+    font-size:16px;
+
+    font-weight:650 !important;
+
+    letter-spacing:0.2px;
+
+    text-align:left !important;
+
+    justify-content:flex-start !important;
+
+    white-space:nowrap;
+
+    transition:all .25s ease;
+
+}
+
+.stButton > button:hover{
+
+    color:#FFFFFF !important;
+
+    background:rgba(124,58,237,.18) !important;
+
+}
+
+
+section[data-testid="stSidebar"]{
+
+background:
+
+rgba(9,13,24,.88);
+
+backdrop-filter:blur(22px);
+
+border-right:
+
+1px solid rgba(255,255,255,.08);
+
+box-shadow:
+
+10px 0 50px rgba(0,0,0,.45);
+
+}
+
+
+
+.block-container{
+
+max-width:1400px;
+
+padding-top:1rem;
+
+padding-left:2rem;
+
+padding-right:2rem;
+
+}
+
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#090D18;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#8B5CF6;
+
+border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#A855F7;
+
+}
+
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-6px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+*{
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border .3s ease,
+        box-shadow .3s ease,
+        transform .3s ease;
+}
+
+
+/* Hide Streamlit header */
+header[data-testid="stHeader"] {
+    background: transparent;
+    height: 0;
+}
+
+div[data-testid="stToolbar"] {
+    display: none;
+}
+
+div[data-testid="stDecoration"] {
+    display: none;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+/* Remove top padding */
+.block-container {
+    padding-top: 0.5rem !important;
+}
+
+/*=================================================
+      PREMIUM LEFT NAVIGATION PANEL
+==================================================*/
+
+.sidebar-card{
+
+    background:rgba(18,22,40,.72);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:22px;
+
+    box-shadow:
+        0 0 40px rgba(124,58,237,.18);
+
+}
+
+/* Logo */
+
+.sidebar-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-bottom:18px;
+
+}
+
+.sidebar-logo-icon{
+
+    font-size:28px;
+
+    color:#8B5CF6;
+
+}
+
+.sidebar-title-white{
+
+    color:white;
+
+    font-size:31px;
+
+    font-weight:850;
+
+    letter-spacing:-1px;
+
+}
+
+.sidebar-title-purple{
+
+    background:linear-gradient(
+        90deg,
+        #2DD4FF 0%,
+        #5B7CFF 45%,
+        #8B5CF6 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    line-height:1;
+
+}
+
+/* Divider */
+
+.sidebar-divider{
+
+    height:1px;
+
+    background:rgba(255,255,255,.08);
+
+    margin:18px 0;
+
+}
+
+/* Navigation */
+
+.nav-item{
+
+    display:flex;
+
+    align-items:left;
+
+    gap:8px;
+
+    padding:14px 16px;
+
+    border-radius:14px;
+
+    margin-bottom:4px;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-item:hover{
+
+    background:rgba(139,92,246,.12);
+
+}
+
+.nav-active{
+
+    background:linear-gradient(
+        90deg,
+        #7C3AED,
+        #A855F7
+    );
+
+    color:white;
+
+    box-shadow:
+
+    0 0 25px rgba(168,85,247,.45);
+
+}
+
+.nav-icon{
+
+    font-size:20px;
+
+}
+
+/*==================================================
+      PREMIUM OPTION MENU
+===================================================*/
+
+/* Navigation Card */
+
+section[data-testid="stSidebar"] .css-1d391kg,
+section[data-testid="stSidebar"]{
+
+    padding-top:20px;
+
+}
+
+/* Menu Container */
+
+ul[data-testid="stSidebarNav"]{
+
+    background:transparent;
+
+}
+
+/* Option Menu Card */
+
+.nav-link{
+
+    background:rgba(255,255,255,.04)!important;
+
+    border-radius:14px!important;
+
+    margin-bottom:10px!important;
+
+    padding:12px 16px!important;
+
+    transition:.3s!important;
+
+}
+
+/* Hover */
+
+.nav-link:hover{
+
+    background:rgba(139,92,246,.15)!important;
+
+    transform:translateX(4px);
+
+}
+
+/* Active */
+
+.nav-link.active{
+
+    background:
+    linear-gradient(
+        90deg,
+        #7C3AED,
+        #A855F7
+    )!important;
+
+    color:white!important;
+
+    box-shadow:
+        0 0 20px rgba(168,85,247,.45);
+
+}
+
+/* Icons */
+
+.nav-link i{
+
+    font-size:20px!important;
+
+    margin-right:12px!important;
+
+}
+
+/* Text */
+
+.nav-link span{
+
+    font-size:16px!important;
+
+    font-weight:600!important;
+
+}
+
+/*==========================================
+        DETECTION SETTINGS CARD
+==========================================*/
+
+.settings-card{
+
+    background:rgba(18,22,40,.72);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:18px;
+
+    margin-top:12px;
+
+    box-shadow:
+        0 0 30px rgba(124,58,237,.15);
+
+}
+
+.settings-title{
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:14px;
+
+}
+
+.stSlider div[data-baseweb="slider"] div[role="slider"]{
+
+    background:#8B5CF6 !important;
+
+    border:3px solid white;
+
+}
+
+div[data-baseweb="select"]{
+
+    border-radius:12px;
+
+}
+
+.nav-link{
+    margin:4px 0 !important;
+    padding:10px 14px !important;
+    border-radius:12px !important;
+    min-height:44px !important;
+}
+
+.nav-link i{
+    margin-right:8px !important;
+    font-size:18px !important;
+}
+
+/* VisionAI Logo */
+
+.sidebar-logo{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+
+}
+
+.logo-icon{
+    width:60px;
+    height:60px;
+
+    filter:
+        drop-shadow(0 0 5px rgba(0,220,255,.35))
+        drop-shadow(0 0 10px rgba(147,51,234,.35));
+}
+
+.logo-title{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    background:linear-gradient(90deg,#ffffff,#38BDF8,#9333EA);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.logo-sub{
+
+    color:#8B9BB8;
+
+    font-size:13px;
+
+    margin-top:-5px;
+
+}
+
+/*==========================
+   SIDEBAR BRAND
+==========================*/
+
+/*==========================
+      SIDEBAR BRAND
+==========================*/
+
+.sidebar-brand{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    margin-bottom:18px;
+
+}
+
+.brand-icon{
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:
+        linear-gradient(135deg,#6D28D9,#9333EA);
+
+    color:white;
+
+    font-size:24px;
+
+    box-shadow:
+        0 0 22px rgba(139,92,246,.45);
+
+}
+
+.brand-text{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    margin-left:2px;
+
+}
+
+.brand-title{
+
+    color:#FFFFFF !important;
+
+    font-size:30px;
+
+    font-weight:800;
+
+    line-height:1;
+
+    letter-spacing:-0.6px;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.brand-subtitle{
+
+    color:#8B5CF6 !important;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    line-height:1;
+
+    margin-top:-2px;
+
+    padding:0;
+
+}
+
+[data-testid="stButton"] > button{
+
+    font-size:17px !important;
+
+    font-weight:700 !important;
+
+    color:#F8FAFC !important;
+
+    letter-spacing:0.2px;
+
+}
+
+/* Reduce vertical spacing between navigation rows */
+div[data-testid="verticalBlock"] > div{
+    gap:0px !important;
+}
+
+
+/* =========================================
+   VISIONAI — IMAGE DETECTION PANEL
+   ========================================= */
+
+/* Consistent typography */
+.stApp h1,
+.stApp h2,
+.stApp h3 {
+    color: #f5f3ff;
+    letter-spacing: -0.35px;
+}
+
+.stApp p {
+    color: #b8c1dc;
+}
+
+/* File uploader container */
+.stApp [data-testid="stFileUploader"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgba(139, 92, 246, 0.32);
+    border-radius: 16px;
+    background: linear-gradient(
+        135deg,
+        rgba(20, 27, 58, 0.96),
+        rgba(28, 20, 58, 0.94)
+    );
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+}
+
+/* Drop area */
+.stApp [data-testid="stFileUploaderDropzone"] {
+    min-height: 105px;
+    border: 1px dashed rgba(129, 140, 248, 0.65);
+    border-radius: 12px;
+    background: rgba(12, 18, 40, 0.72);
+}
+
+/* Uploader text */
+.stApp [data-testid="stFileUploaderDropzone"] p,
+.stApp [data-testid="stFileUploaderDropzone"] span {
+    color: #dbe4ff !important;
+    font-size: 13px;
+}
+
+/* Upload / browse button */
+.stApp [data-testid="stFileUploader"] button {
+    background: linear-gradient(135deg, #6d4aff, #8b5cf6);
+    color: #ffffff;
+    border: 1px solid rgba(196, 181, 253, 0.35);
+    border-radius: 9px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.stApp [data-testid="stFileUploader"] button:hover {
+    background: linear-gradient(135deg, #805fff, #a78bfa);
+    border-color: #c4b5fd;
+    color: #ffffff;
+}
+
+/* Informational message before upload */
+.stApp [data-testid="stAlert"] {
+    background: rgba(30, 41, 75, 0.68);
+    border: 1px solid rgba(96, 165, 250, 0.28);
+    border-radius: 12px;
+    color: #dbeafe;
+}
+
+/* Section spacing */
+.stApp [data-testid="stFileUploader"] {
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+/* Consistent focus state */
+.stApp [data-testid="stFileUploader"] button:focus-visible {
+    outline: 2px solid #a78bfa;
+    outline-offset: 3px;
+}

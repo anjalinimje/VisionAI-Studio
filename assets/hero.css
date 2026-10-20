@@ -1,0 +1,1904 @@
+
+
+/* ==========================================================
+                     HERO SECTION
+========================================================== */
+
+.hero-badge{
+    display:inline-block;
+    padding:6px 12px;
+    margin-bottom:5px;
+
+    border-radius:999px;
+
+    background:rgba(139,92,246,.15);
+
+    border:1px solid rgba(168,85,247,.35);
+
+    color:#C4B5FD;
+
+    font-weight:550;
+
+    letter-spacing:.5px;
+}
+
+
+
+.hero-container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+min-height:460px;
+
+padding:70px 60px;
+
+margin-bottom:50px;
+
+border-radius:28px;
+
+position:relative;
+
+overflow:hidden;
+
+background:
+    linear-gradient(
+        135deg,
+        rgba(124,58,237,.35),
+        rgba(59,130,246,.08)
+    );
+}
+
+.hero-container::before{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+
+height:700px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+
+circle,
+
+rgba(124,58,237,.25),
+
+transparent 70%
+
+);
+
+top:-250px;
+
+right:-180px;
+
+z-index:0;
+
+}
+
+.hero-left{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+
+/* ==========================================================
+                    BUTTONS
+========================================================== */
+
+div[data-testid="stButton"] button{
+
+    background:
+        linear-gradient(
+            135deg,
+            #7C3AED,
+            #A855F7
+        );
+
+    color:white;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px;
+
+    font-weight:700;
+
+    font-size:16px;
+
+    transition:.35s;
+
+    box-shadow:
+        0 0 30px rgba(124,58,237,.35);
+
+}
+
+div[data-testid="stButton"] button{
+
+    height:60px;
+
+    min-width:190px;
+
+    border-radius:18px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #7C3AED,
+    #A855F7
+    );
+
+box-shadow:
+
+0 12px 35px rgba(124,58,237,.40);
+
+transition:.3s;
+
+}
+
+div[data-testid="stButton"] button:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+
+0 18px 50px rgba(168,85,247,.50);
+
+}
+
+/* ==========================================================
+                ANIMATION
+========================================================== */
+
+@keyframes pulseGlow{
+
+0%{
+
+box-shadow:
+
+0 0 40px rgba(124,58,237,.35),
+
+0 0 90px rgba(124,58,237,.25);
+
+}
+
+50%{
+
+box-shadow:
+
+0 0 70px rgba(168,85,247,.65),
+
+0 0 140px rgba(168,85,247,.35);
+
+}
+
+100%{
+
+box-shadow:
+
+0 0 40px rgba(124,58,237,.35),
+
+0 0 90px rgba(124,58,237,.25);
+
+}
+
+}
+
+/* ==========================================================
+                RESPONSIVE
+========================================================== */
+
+@media (max-width:900px){
+
+    .hero-title{
+
+        font-size:42px;
+        line-height:1.0;
+        margin-bottom:10px;
+
+    }
+
+    .hero-circle{
+
+        width:220px;
+
+        height:220px;
+
+        font-size:80px;
+
+    }
+
+}
+
+.title-white{
+
+    font-size:40px;
+
+    font-weight:800;
+
+    line-height:1.0;
+
+    margin:20px 0 0 0;
+
+    letter-spacing:-2px;
+
+    color:white;
+
+}
+
+.title-gradient{
+
+    font-size:40px;
+
+    font-weight:800;
+
+    line-height:1.5;
+
+    margin-top:-6px;
+
+    margin-bottom:2px;
+
+    letter-spacing:-2px;
+
+    background:linear-gradient(
+        90deg,
+        #36C8FF,
+        #7C3AED,
+        #D946EF
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.hero-description{
+    font-size:18px;
+    line-height:1.8;
+    color:#CBD5E1;
+    max-width:700px;
+    margin-bottom:2px;
+    margin-top:0px;
+}
+
+.hero-features{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+    margin-top:4px;
+    margin-bottom:18px;
+
+}
+
+/* ============================= */
+/* Premium Glass Feature Cards   */
+/* ============================= */
+
+.mini-card{
+
+    width:60px;
+    height:60px;
+
+    margin:0 auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,0.06);
+
+    border:1px solid rgba(255,255,255,0.10);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,0.08),
+        0 10px 30px rgba(0,0,0,.25);
+
+    transition:all .35s ease;
+
+    font-size:34px;
+
+}
+
+.mini-card:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(124,58,237,.18);
+
+    border:1px solid rgba(168,85,247,.45);
+
+    box-shadow:
+        0 0 35px rgba(124,58,237,.40),
+        0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.mini-title{
+
+    margin-top:10px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    line-height:1.0;
+
+}
+
+
+.orb{
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+        #8a2be2 0%,
+        #5b17ff 45%,
+        #18002f 100%
+    );
+
+    box-shadow:
+        0 0 40px rgba(145,80,255,.6),
+        0 0 90px rgba(145,80,255,.45),
+        inset 0 0 35px rgba(255,255,255,.15);
+
+
+    animation:
+        floatRobot 5s ease-in-out infinite,
+        pulseGlow 3s ease-in-out infinite;
+
+}
+
+.orb::before{
+
+content:"";
+
+position:absolute;
+
+width:520px;
+
+height:520px;
+
+border-radius:50%;
+
+border:1px solid rgba(168,85,247,.12);
+
+box-shadow:
+
+0 0 120px rgba(124,58,237,.35);
+
+}
+
+.feature-icon{
+
+font-size:34px;
+
+background:linear-gradient(
+180deg,
+#38BDF8,
+#8B5CF6
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+filter:drop-shadow(0 0 10px rgba(139,92,246,.45));
+
+}
+
+div[data-testid="column"]{
+
+    padding-right:6px !important;
+    padding-left:6px !important;
+
+}
+
+.hero-right{
+    position: relative;
+    width:100%;
+    height:420px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.hero-visual{
+
+    position:relative;
+
+    width:420px;
+
+    height:420px;
+
+    margin:auto;
+
+    overflow:visible;
+
+}
+
+.ai-lens{
+
+    width:220px;
+    height:220px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(circle,
+        #8B5CF6 0%,
+        #6D28D9 40%,
+        #1E1B4B 100%);
+
+    box-shadow:
+        0 0 40px rgba(139,92,246,.5),
+        0 0 100px rgba(139,92,246,.3);
+
+    
+}
+
+.detect-card{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+
+    font-size:42px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(168,85,247,.25);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35),
+        0 0 20px rgba(139,92,246,.25);
+
+    transition:.35s;
+}
+
+.detect-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 0 35px rgba(139,92,246,.45);
+}
+
+.detect-card img{
+
+width:56px;
+
+height:56px;
+
+object-fit:contain;
+
+}
+
+.detect-card:hover{
+
+    transform:scale(1.08);
+
+    border-color:#a855f7;
+
+    box-shadow:
+
+        0 0 25px #8b5cf6,
+
+        0 0 60px rgba(168,85,247,.45);
+
+}
+
+.detect-label{
+
+    position:absolute;
+
+    top:-10px;
+    left:8px;
+
+    background:linear-gradient(90deg,#8b5cf6,#a855f7);
+
+    color:white;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    padding:4px 8px;
+
+    border-radius:8px;
+
+    box-shadow:
+        0 0 15px rgba(162,89,255,.6);
+}
+
+.bicycle{
+
+top:10px;
+left:170px;
+
+}
+
+.butterfly{
+
+top:140px;
+left:15px;
+
+}
+
+.car{
+
+top:140px;
+right:15px;
+
+}
+
+.dog{
+
+bottom:30px;
+right:45px;
+
+}
+
+@keyframes pulseLens{
+
+0%{
+
+transform:translate(-50%,-50%) scale(1);
+
+}
+
+50%{
+
+transform:translate(-50%,-50%) scale(1.06);
+
+}
+
+100%{
+
+transform:translate(-50%,-50%) scale(1);
+
+}
+
+}
+
+
+/* =========================================
+   VISIONAI — HERO ILLUSTRATION FIX
+   ========================================= */
+
+.hero-right {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-visual {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    height: 370px;
+    margin: 0 auto;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Keep the glowing lens inside the illustration */
+.ai-lens {
+    position: absolute;
+    width: clamp(145px, 48%, 205px);
+    aspect-ratio: 1 / 1;
+    height: auto;
+    left: 50%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Keep each detection card inside the hero boundary */
+.detect-card {
+    position: absolute;
+    z-index: 2;
+    box-sizing: border-box;
+    width: clamp(76px, 25%, 100px);
+    min-height: 70px;
+    max-width: calc(100% - 12px);
+    padding: 10px 6px;
+    border: 1px solid rgba(139, 92, 246, 0.65);
+    border-radius: 14px;
+    background: rgba(15, 20, 45, 0.94);
+    color: #f4f5ff;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.25;
+    box-shadow:
+        0 0 18px rgba(124, 58, 237, 0.18),
+        inset 0 0 12px rgba(59, 130, 246, 0.08);
+    overflow: hidden;
+}
+
+/* Keep labels readable and within each card */
+.detect-label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 7px;
+    color: #c4b5fd;
+    font-size: clamp(9px, 0.8vw, 11px);
+    font-weight: 700;
+    line-height: 1.3;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+/* Balanced positions around the lens */
+.detect-card.bicycle {
+    top: 4%;
+    right: 4%;
+}
+
+.detect-card.butterfly {
+    top: 36%;
+    left: 2%;
+}
+
+.detect-card.car {
+    top: 57%;
+    right: 2%;
+}
+
+.detect-card.dog {
+    bottom: 3%;
+    left: 43%;
+    transform: translateX(-50%);
+}
+
+/* Tablet and narrow screens */
+@media (max-width: 900px) {
+    .hero-visual {
+        max-width: 360px;
+        height: 330px;
+    }
+
+    .detect-card {
+        width: 82px;
+        min-height: 66px;
+        padding: 8px 5px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero-visual {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .detect-card.bicycle {
+        top: 3%;
+        right: 2%;
+    }
+
+    .detect-card.butterfly {
+        top: 35%;
+        left: 1%;
+    }
+
+    .detect-card.car {
+        top: 55%;
+        right: 1%;
+    }
+
+    .detect-card.dog {
+        bottom: 2%;
+        left: 50%;
+    }
+}
+
+
+/* ==========================================================
+   FINAL OVERRIDES — RESPONSIVE HERO ILLUSTRATION
+   All four cards and the lens are children of .hero-visual.
+   ========================================================== */
+
+.hero-right {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-visual {
+    position: relative;
+    width: min(100%, 430px);
+    height: 370px;
+    margin: 0 auto;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.ai-lens {
+    position: absolute;
+    width: clamp(150px, 52%, 220px);
+    aspect-ratio: 1 / 1;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, #8B5CF6 0%, #6D28D9 42%, #1E1B4B 100%);
+    box-shadow: 0 0 42px rgba(139,92,246,.52), 0 0 100px rgba(139,92,246,.30);
+    z-index: 0;
+    pointer-events: none;
+    animation: pulseLens 4s ease-in-out infinite;
+}
+
+.detect-card {
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 2;
+    width: clamp(78px, 24%, 98px);
+    min-height: 86px;
+    height: auto;
+    margin: 0;
+    padding: 14px 6px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    overflow: hidden;
+    border: 1px solid rgba(168,85,247,.48);
+    border-radius: 15px;
+    background: rgba(15,20,45,.94);
+    color: #F5F3FF;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(0,0,0,.28), 0 0 20px rgba(139,92,246,.18);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.detect-card:hover {
+    transform: none;
+    border-color: #A78BFA;
+    box-shadow: 0 0 26px rgba(139,92,246,.36);
+}
+
+.detect-label {
+    position: static;
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 3px 4px;
+    border-radius: 6px;
+    background: rgba(124,58,237,.22);
+    color: #C4B5FD;
+    font-size: clamp(9px, 0.75vw, 10px);
+    font-weight: 700;
+    line-height: 1.25;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    box-shadow: none;
+}
+
+.detect-object {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 38px;
+    font-size: clamp(25px, 3vw, 35px);
+    line-height: 1.1;
+}
+
+.detect-card img {
+    display: block;
+    width: 38px;
+    height: 38px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.detect-card.bicycle {
+    top: 4%;
+    right: 3%;
+    left: auto;
+    bottom: auto;
+}
+
+.detect-card.butterfly {
+    top: 36%;
+    left: 1%;
+    right: auto;
+    bottom: auto;
+}
+
+.detect-card.car {
+    top: 56%;
+    right: 1%;
+    left: auto;
+    bottom: auto;
+}
+
+.detect-card.dog {
+    bottom: 2%;
+    left: 43%;
+    right: auto;
+    top: auto;
+}
+
+@media (max-width: 1100px) {
+    .hero-right {
+        height: 340px;
+    }
+    .hero-visual {
+        height: 330px;
+    }
+    .detect-card {
+        width: 82px;
+        min-height: 76px;
+    }
+}
+
+@media (max-width: 760px) {
+    .hero-right {
+        height: 310px;
+        margin-top: 16px;
+    }
+    .hero-visual {
+        height: 300px;
+    }
+    .ai-lens {
+        width: 165px;
+    }
+    .detect-card {
+        width: 78px;
+        min-height: 72px;
+    }
+    .detect-card.butterfly { top: 34%; left: 0; }
+    .detect-card.car { top: 54%; right: 0; }
+    .detect-card.dog { left: 50%; bottom: 1%; }
+}
+
+@keyframes pulseLens {
+    0%, 100% { box-shadow: 0 0 42px rgba(139,92,246,.48), 0 0 90px rgba(139,92,246,.26); }
+    50% { box-shadow: 0 0 58px rgba(139,92,246,.62), 0 0 115px rgba(139,92,246,.34); }
+}
+
+/* Feature subtitle used by the updated hero component */
+.mini-sub {
+    margin-top: 5px;
+    text-align: center;
+    color: #AAB5D2;
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+/* ==========================================================
+   IMAGE DETECTION — MATCH THE DARK NAVY / PURPLE THEME
+   ========================================================== */
+
+.stApp [data-testid="stFileUploader"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid rgba(139,92,246,.34);
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(20,27,58,.96), rgba(28,20,58,.94));
+    box-shadow: 0 8px 26px rgba(0,0,0,.16);
+}
+
+.stApp [data-testid="stFileUploaderDropzone"] {
+    min-height: 100px;
+    border: 1px dashed rgba(129,140,248,.62);
+    border-radius: 12px;
+    background: rgba(12,18,40,.74);
+}
+
+.stApp [data-testid="stFileUploaderDropzone"] p,
+.stApp [data-testid="stFileUploaderDropzone"] span {
+    color: #DCE4FF !important;
+    font-size: 13px;
+}
+
+.stApp [data-testid="stFileUploader"] button {
+    min-width: 0;
+    height: auto;
+    padding: 8px 14px;
+    border: 1px solid rgba(196,181,253,.35);
+    border-radius: 9px;
+    background: linear-gradient(135deg, #6D4AFF, #8B5CF6);
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 650;
+    box-shadow: none;
+    transform: none;
+}
+
+.stApp [data-testid="stFileUploader"] button:hover {
+    background: linear-gradient(135deg, #805FFF, #A78BFA);
+    border-color: #C4B5FD;
+    color: #FFFFFF;
+    transform: none;
+}
+
+.stApp [data-testid="stAlert"] {
+    border-radius: 12px;
+    background: rgba(30,41,75,.68);
+    border: 1px solid rgba(96,165,250,.28);
+    color: #DBEAFE;
+}
+
+
+/* =========================================
+   IMAGE DETECTION — DARK PURPLE THEME
+   ========================================= */
+
+/* Darken the upload panel */
+.stApp [data-testid="stFileUploader"] {
+    background: linear-gradient(
+        135deg,
+        rgba(18, 24, 53, 0.96),
+        rgba(35, 24, 68, 0.94)
+    ) !important;
+    border: 1px solid rgba(139, 92, 246, 0.40) !important;
+    border-radius: 14px !important;
+    padding: 8px !important;
+    box-shadow: none !important;
+}
+
+/* Dark upload drop zone */
+.stApp [data-testid="stFileUploaderDropzone"] {
+    background: rgba(12, 18, 40, 0.88) !important;
+    border: 1px dashed rgba(167, 139, 250, 0.65) !important;
+    border-radius: 11px !important;
+    min-height: 72px !important;
+    padding: 10px 14px !important;
+}
+
+/* Upload instructions */
+.stApp [data-testid="stFileUploaderDropzone"] p,
+.stApp [data-testid="stFileUploaderDropzone"] span {
+    color: #E2E8FF !important;
+    font-size: 13px !important;
+}
+
+/* Purple Browse button */
+.stApp [data-testid="stFileUploader"] button {
+    background: linear-gradient(
+        135deg, #6D4AFF, #8B5CF6
+    ) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(196, 181, 253, 0.4) !important;
+    border-radius: 9px !important;
+    box-shadow: none !important;
+}
+
+/* Make the upload reminder compact */
+.stApp [data-testid="stAlert"] {
+    display: inline-flex !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 5px 10px !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+    border-radius: 9px !important;
+    background: rgba(37, 53, 91, 0.55) !important;
+    border: 1px solid rgba(96, 165, 250, 0.30) !important;
+    box-shadow: none !important;
+}
+
+/* Reduce reminder text size and spacing */
+.stApp [data-testid="stAlert"] p {
+    color: #DCE8FF !important;
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+}
+
+
+/* Neon hover effect for Browse files */
+.stApp [data-testid="stFileUploader"] button {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+.stApp [data-testid="stFileUploader"] button:hover {
+    transform: translateY(-2px) scale(1.03) !important;
+    box-shadow:
+        0 0 12px rgba(139, 92, 246, 0.65),
+        0 0 24px rgba(56, 207, 255, 0.22) !important;
+    filter: brightness(1.15) !important;
+}
+
+.stApp [data-testid="stFileUploader"] button:active {
+    transform: scale(0.98) !important;
+}
+
+
+/* Compact Image Detection section */
+.st-key-image_detection_panel [data-testid="stFileUploader"] {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.st-key-image_detection_panel [data-testid="stAlert"] {
+    display: inline-flex !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
+    padding: 4px 9px !important;
+}
+
+.st-key-image_detection_panel [data-testid="stAlert"] p {
+    font-size: 11px !important;
+    line-height: 1.25 !important;
+    margin: 0 !important;
+}
+
+/* Reduce spacing between Streamlit elements */
+.st-key-image_detection_panel [data-testid="stVerticalBlock"] {
+    gap: 0.5rem;
+}
+
+
+/* Tighten the image upload area */
+.stApp [data-testid="stFileUploader"] {
+    margin-top: -8px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Remove extra space after the uploader label */
+.stApp [data-testid="stFileUploader"] label {
+    margin-bottom: 2px !important;
+    padding-bottom: 0 !important;
+}
+
+
+/* Bring Browse files closer to the upload instructions */
+.stApp [data-testid="stFileUploaderDropzone"] {
+    justify-content: flex-start !important;
+    gap: 16px !important;
+}
+
+.stApp [data-testid="stFileUploaderDropzone"] > div {
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+}
+
+/* Keep the Browse files button compact */
+.stApp [data-testid="stFileUploaderDropzone"] button {
+    flex: 0 0 auto !important;
+    margin-left: 0 !important;
+    white-space: nowrap !important;
+}
+
+
+/* Dark neon styling for Streamlit status messages */
+.stApp [data-testid="stAlert"] {
+    background: linear-gradient(
+        120deg,
+        rgba(29, 25, 62, 0.95),
+        rgba(20, 34, 63, 0.95)
+    ) !important;
+    border: 1px solid rgba(139, 92, 246, 0.4) !important;
+    border-radius: 12px !important;
+    color: #E2E8FF !important;
+    box-shadow: 0 0 16px rgba(139, 92, 246, 0.08) !important;
+}
+
+.stApp [data-testid="stAlert"] p {
+    color: #E2E8FF !important;
+}
+
+/* Section headings */
+.stApp h2,
+.stApp h3,
+.stApp h4 {
+    color: #E2E8FF;
+}
+
+/* Subtle neon dividers */
+.stApp hr {
+    border-color: rgba(139, 92, 246, 0.25) !important;
+}
+
+/* Download button */
+.stApp [data-testid="stDownloadButton"] button {
+    background: linear-gradient(110deg, #6D4AFF, #8B5CF6) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(167, 139, 250, 0.6) !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease !important;
+}
+
+.stApp [data-testid="stDownloadButton"] button:hover {
+    box-shadow: 0 0 18px rgba(139, 92, 246, 0.5) !important;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   VISIONAI NEON POLISH — SUMMARY CARDS, EXPLORER, DOWNLOAD
+   Append-only overrides; keeps existing layout and detection logic.
+   ========================================================== */
+
+.neon-info-card {
+    min-height: 176px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 12px;
+    text-align: center;
+    border: 1px solid rgba(139, 92, 246, .48);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(20, 27, 58, .96), rgba(35, 24, 68, .94));
+    box-shadow: 0 7px 22px rgba(0, 0, 0, .22), inset 0 0 18px rgba(139, 92, 246, .04);
+    transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease, background .22s ease;
+}
+.neon-info-card:hover {
+    transform: translateY(-5px);
+    border-color: #A78BFA;
+    background: linear-gradient(145deg, rgba(34, 30, 83, .98), rgba(44, 25, 83, .98));
+    box-shadow: 0 0 12px rgba(139, 92, 246, .28), 0 0 28px rgba(139, 92, 246, .18);
+}
+.neon-info-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 11px;
+    color: #B794FF;
+    filter: drop-shadow(0 0 7px rgba(167, 139, 250, .8));
+}
+.neon-icon {
+    display: inline-block;
+    flex: 0 0 auto;
+    color: #B794FF;
+    filter: drop-shadow(0 0 5px rgba(139, 92, 246, .6));
+}
+.neon-info-card-title {
+    color: #D9CCFF;
+    font-size: 15px;
+    font-weight: 650;
+    margin-bottom: 12px;
+}
+.neon-info-card-value {
+    color: #38CFFF;
+    font-size: 24px;
+    font-weight: 750;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+    margin-bottom: 10px;
+    text-shadow: 0 0 12px rgba(56, 207, 255, .16);
+}
+.neon-info-card-subtitle {
+    color: #B8C2E4;
+    font-size: 11px;
+    line-height: 1.45;
+}
+.neon-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #C4B5FD !important;
+    margin: 18px 0 8px;
+}
+.neon-section-heading .neon-icon {
+    color: #A78BFA;
+}
+.neon-observation {
+    background: linear-gradient(145deg, rgba(20, 27, 58, .96), rgba(35, 24, 68, .94));
+    border: 1px solid rgba(139, 92, 246, .48);
+    border-radius: 12px;
+    padding: 14px 16px;
+    color: #E2E8FF;
+    line-height: 1.6;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+.neon-observation:hover {
+    border-color: #A78BFA;
+    box-shadow: 0 0 20px rgba(139, 92, 246, .16);
+}
+.neon-helper-text {
+    color: #B8C2E4;
+    margin: 0 0 10px;
+}
+.st-key-detection-explorer .neon-object-caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 14px;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 13px;
+    margin: 10px 0 4px;
+    border: 1px solid rgba(139, 92, 246, .48);
+    border-radius: 12px;
+    background: linear-gradient(120deg, rgba(25, 29, 70, .92), rgba(37, 24, 74, .94));
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.st-key-detection-explorer .neon-object-caption:hover {
+    border-color: #A78BFA;
+    box-shadow: 0 0 18px rgba(139, 92, 246, .22);
+    transform: translateY(-2px);
+}
+.neon-object-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #E9E2FF;
+    font-size: 15px;
+    font-weight: 700;
+}
+.neon-object-name .neon-icon {
+    color: #B794FF;
+}
+.neon-object-meta {
+    color: #AFC0E8;
+    font-size: 11px;
+}
+.neon-dot {
+    color: #A78BFA;
+    padding: 0 3px;
+}
+.st-key-detection-explorer div[data-testid="stButton"] {
+    width: fit-content !important;
+    margin: 0 0 8px 0 !important;
+}
+.st-key-detection-explorer div[data-testid="stButton"] button {
+    width: auto !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 6px 11px !important;
+    margin: 0 !important;
+    border-radius: 9px !important;
+    border: 1px solid rgba(167, 139, 250, .52) !important;
+    background: rgba(91, 33, 182, .22) !important;
+    color: #D9CCFF !important;
+    font-size: 12px !important;
+    font-weight: 650 !important;
+    box-shadow: none !important;
+    transition: background .2s ease, box-shadow .2s ease, transform .2s ease !important;
+}
+.st-key-detection-explorer div[data-testid="stButton"] button:hover {
+    background: linear-gradient(110deg, #6D28D9, #8B5CF6) !important;
+    color: #FFFFFF !important;
+    border-color: #C4B5FD !important;
+    box-shadow: 0 0 13px rgba(139, 92, 246, .45) !important;
+    transform: translateY(-1px) !important;
+}
+/* Ensure download controls match the neon palette rather than Streamlit's white default. */
+.stApp [data-testid="stDownloadButton"] button {
+    background: linear-gradient(110deg, #6D28D9, #8B5CF6) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(196, 181, 253, .65) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 12px rgba(139, 92, 246, .16) !important;
+    transition: transform .2s ease, box-shadow .2s ease, filter .2s ease !important;
+}
+.stApp [data-testid="stDownloadButton"] button:hover {
+    background: linear-gradient(110deg, #7C3AED, #A855F7) !important;
+    color: #FFFFFF !important;
+    border-color: #D8B4FE !important;
+    box-shadow: 0 0 14px rgba(139, 92, 246, .55), 0 0 24px rgba(56, 207, 255, .15) !important;
+    transform: translateY(-2px) !important;
+    filter: brightness(1.08);
+}
+/* Compact the native status banner and keep its accent purple. */
+.stApp [data-testid="stAlert"] {
+    background: linear-gradient(120deg, rgba(29, 25, 62, .95), rgba(20, 34, 63, .95)) !important;
+    border: 1px solid rgba(139, 92, 246, .42) !important;
+    color: #E2E8FF !important;
+}
+@media (max-width: 760px) {
+    .neon-info-card { min-height: 155px; padding: 16px 8px; }
+    .neon-info-card-value { font-size: 20px; }
+}
+
+
+/* ==========================================
+   VISIONAI STUDIO — FINAL HERO ALIGNMENT
+   ========================================== */
+
+.hero-right {
+    position: relative !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 430px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+}
+
+.hero-visual {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 460px !important;
+    height: 410px !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+    isolation: isolate;
+}
+
+/* Center the globe lower in the illustration */
+.ai-lens {
+    position: absolute !important;
+    width: clamp(170px, 48%, 220px) !important;
+    aspect-ratio: 1 / 1 !important;
+    height: auto !important;
+    left: 50% !important;
+    top: 54% !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 50% !important;
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(192, 132, 252, .95) 0%,
+            rgba(109, 40, 217, .8) 28%,
+            rgba(49, 20, 110, .95) 65%,
+            #080D28 100%
+        ) !important;
+    border: 1px solid rgba(167, 139, 250, .85);
+    box-shadow:
+        0 0 25px rgba(139, 92, 246, .8),
+        0 0 65px rgba(124, 58, 237, .55),
+        inset 0 0 28px rgba(192, 132, 252, .35);
+    z-index: 1;
+    pointer-events: none;
+    animation: visionai-globe-pulse 4s ease-in-out infinite;
+}
+
+/* Keep all four cards consistent */
+.detect-card {
+    position: absolute !important;
+    z-index: 3 !important;
+    box-sizing: border-box !important;
+    width: 100px !important;
+    min-height: 100px !important;
+    padding: 10px 7px !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    border: 1px solid rgba(168, 85, 247, .8) !important;
+    border-radius: 16px !important;
+    background: linear-gradient(
+        145deg,
+        rgba(23, 15, 55, .97),
+        rgba(10, 18, 48, .96)
+    ) !important;
+    box-shadow:
+        0 0 15px rgba(139, 92, 246, .28),
+        inset 0 0 14px rgba(139, 92, 246, .10);
+    transition: box-shadow .25s ease, border-color .25s ease;
+}
+
+.detect-card:hover {
+    border-color: #D8B4FE !important;
+    box-shadow:
+        0 0 20px rgba(168, 85, 247, .65),
+        0 0 40px rgba(124, 58, 237, .3);
+}
+
+.detect-label {
+    position: static !important;
+    margin: 0 !important;
+    padding: 4px 5px !important;
+    color: #E9D5FF !important;
+    background: rgba(109, 40, 217, .32) !important;
+    border: 1px solid rgba(167, 139, 250, .25);
+    border-radius: 7px;
+    font-size: 10px !important;
+    line-height: 1.25 !important;
+    text-align: center;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    box-shadow: none !important;
+}
+
+.detect-object {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    width: 100%;
+    font-size: 38px;
+    line-height: 1;
+}
+
+.detect-object img {
+    display: block;
+    width: 64px;
+    height: 58px;
+    object-fit: contain;
+    filter:
+        drop-shadow(0 0 5px rgba(168, 85, 247, .9))
+        drop-shadow(0 0 13px rgba(124, 58, 237, .65));
+}
+
+/* Balanced positions around the globe */
+.detect-card.bicycle {
+    top: 2% !important;
+    left: 5% !important;
+    right: auto !important;
+    bottom: auto !important;
+}
+
+.detect-card.butterfly {
+    top: 2% !important;
+    left: auto !important;
+    right: 5% !important;
+    bottom: auto !important;
+}
+
+.detect-card.dog {
+    bottom: 3% !important;
+    left: 5% !important;
+    right: auto !important;
+    top: auto !important;
+}
+
+.detect-card.car {
+    bottom: 3% !important;
+    left: auto !important;
+    right: 5% !important;
+    top: auto !important;
+}
+
+@keyframes visionai-globe-pulse {
+    0%, 100% {
+        box-shadow:
+            0 0 25px rgba(139, 92, 246, .65),
+            0 0 55px rgba(124, 58, 237, .4),
+            inset 0 0 28px rgba(192, 132, 252, .3);
+    }
+    50% {
+        box-shadow:
+            0 0 35px rgba(167, 139, 250, .9),
+            0 0 75px rgba(124, 58, 237, .6),
+            inset 0 0 35px rgba(192, 132, 252, .45);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-right {
+        height: 360px !important;
+    }
+
+    .hero-visual {
+        height: 350px !important;
+    }
+
+    .ai-lens {
+        width: 165px !important;
+    }
+
+    .detect-card {
+        width: 86px !important;
+        min-height: 86px !important;
+    }
+
+    .detect-object img {
+        width: 52px;
+        height: 48px;
+    }
+}
+
+
+/* ==========================================
+   VISIONAI STUDIO — FINAL HERO ALIGNMENT
+   ========================================== */
+
+.hero-right {
+    position: relative !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 430px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+}
+
+.hero-visual {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 460px !important;
+    height: 410px !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+    isolation: isolate;
+}
+
+/* Center the globe lower in the illustration */
+.ai-lens {
+    position: absolute !important;
+    width: clamp(170px, 48%, 220px) !important;
+    aspect-ratio: 1 / 1 !important;
+    height: auto !important;
+    left: 50% !important;
+    top: 54% !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 50% !important;
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(192, 132, 252, .95) 0%,
+            rgba(109, 40, 217, .8) 28%,
+            rgba(49, 20, 110, .95) 65%,
+            #080D28 100%
+        ) !important;
+    border: 1px solid rgba(167, 139, 250, .85);
+    box-shadow:
+        0 0 25px rgba(139, 92, 246, .8),
+        0 0 65px rgba(124, 58, 237, .55),
+        inset 0 0 28px rgba(192, 132, 252, .35);
+    z-index: 1;
+    pointer-events: none;
+    animation: visionai-globe-pulse 4s ease-in-out infinite;
+}
+
+/* Keep all four cards consistent */
+.detect-card {
+    position: absolute !important;
+    z-index: 3 !important;
+    box-sizing: border-box !important;
+    width: 100px !important;
+    min-height: 100px !important;
+    padding: 10px 7px !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    border: 1px solid rgba(168, 85, 247, .8) !important;
+    border-radius: 16px !important;
+    background: linear-gradient(
+        145deg,
+        rgba(23, 15, 55, .97),
+        rgba(10, 18, 48, .96)
+    ) !important;
+    box-shadow:
+        0 0 15px rgba(139, 92, 246, .28),
+        inset 0 0 14px rgba(139, 92, 246, .10);
+    transition: box-shadow .25s ease, border-color .25s ease;
+}
+
+.detect-card:hover {
+    border-color: #D8B4FE !important;
+    box-shadow:
+        0 0 20px rgba(168, 85, 247, .65),
+        0 0 40px rgba(124, 58, 237, .3);
+}
+
+.detect-label {
+    position: static !important;
+    margin: 0 !important;
+    padding: 4px 5px !important;
+    color: #E9D5FF !important;
+    background: rgba(109, 40, 217, .32) !important;
+    border: 1px solid rgba(167, 139, 250, .25);
+    border-radius: 7px;
+    font-size: 10px !important;
+    line-height: 1.25 !important;
+    text-align: center;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    box-shadow: none !important;
+}
+
+.detect-object {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    width: 100%;
+    font-size: 38px;
+    line-height: 1;
+}
+
+.detect-object img {
+    display: block;
+    width: 64px;
+    height: 58px;
+    object-fit: contain;
+    filter:
+        drop-shadow(0 0 5px rgba(168, 85, 247, .9))
+        drop-shadow(0 0 13px rgba(124, 58, 237, .65));
+}
+
+/* Balanced positions around the globe */
+.detect-card.bicycle {
+    top: 2% !important;
+    left: 5% !important;
+    right: auto !important;
+    bottom: auto !important;
+}
+
+.detect-card.butterfly {
+    top: 2% !important;
+    left: auto !important;
+    right: 5% !important;
+    bottom: auto !important;
+}
+
+.detect-card.dog {
+    bottom: 3% !important;
+    left: 5% !important;
+    right: auto !important;
+    top: auto !important;
+}
+
+.detect-card.car {
+    bottom: 3% !important;
+    left: auto !important;
+    right: 5% !important;
+    top: auto !important;
+}
+
+@keyframes visionai-globe-pulse {
+    0%, 100% {
+        box-shadow:
+            0 0 25px rgba(139, 92, 246, .65),
+            0 0 55px rgba(124, 58, 237, .4),
+            inset 0 0 28px rgba(192, 132, 252, .3);
+    }
+    50% {
+        box-shadow:
+            0 0 35px rgba(167, 139, 250, .9),
+            0 0 75px rgba(124, 58, 237, .6),
+            inset 0 0 35px rgba(192, 132, 252, .45);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-right {
+        height: 360px !important;
+    }
+
+    .hero-visual {
+        height: 350px !important;
+    }
+
+    .ai-lens {
+        width: 165px !important;
+    }
+
+    .detect-card {
+        width: 86px !important;
+        min-height: 86px !important;
+    }
+
+    .detect-object img {
+        width: 52px;
+        height: 48px;
+    }
+}
+
+
+
+/* ==========================================================
+   HERO RIGHT SIDE — SINGLE CANVAS, SQUARE CARD LAYOUT
+   Append-only overrides for components/hero.py updated version
+   ========================================================== */
+
+.hero-right {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 470px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.hero-visual {
+    position: relative !important;
+    width: min(100%, 440px) !important;
+    height: 440px !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+    isolation: isolate;
+}
+
+/* Lower the globe: top is measured from the visual canvas. */
+.hero-visual .ai-lens {
+    position: absolute !important;
+    left: 50% !important;
+    top: 57% !important;
+    width: clamp(165px, 47%, 215px) !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 1 !important;
+    border-radius: 50% !important;
+    background: radial-gradient(circle at 34% 28%, #C084FC 0%, #7C3AED 27%, #32116F 62%, #090D27 100%) !important;
+    border: 1px solid rgba(196,181,253,.75) !important;
+    box-shadow: 0 0 32px rgba(139,92,246,.72), 0 0 75px rgba(124,58,237,.4), inset 0 0 28px rgba(192,132,252,.25) !important;
+    pointer-events: none;
+}
+
+/* Same dimensions for all four cards; two top, two bottom. */
+.hero-visual .detect-card {
+    position: absolute !important;
+    width: 104px !important;
+    height: 104px !important;
+    min-height: 104px !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 8px 6px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    border: 1px solid rgba(168,85,247,.68) !important;
+    border-radius: 15px !important;
+    background: linear-gradient(145deg, rgba(23,15,55,.97), rgba(10,18,48,.97)) !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,.24), 0 0 18px rgba(139,92,246,.18) !important;
+    overflow: hidden !important;
+    z-index: 3 !important;
+}
+
+/* Explicit square corners: top-left, top-right, bottom-left, bottom-right. */
+.hero-visual .detect-card.bicycle { top: 3% !important; left: 3% !important; right: auto !important; bottom: auto !important; }
+.hero-visual .detect-card.butterfly { top: 3% !important; right: 3% !important; left: auto !important; bottom: auto !important; }
+.hero-visual .detect-card.dog { bottom: 3% !important; left: 3% !important; right: auto !important; top: auto !important; }
+.hero-visual .detect-card.car { bottom: 3% !important; right: 3% !important; left: auto !important; top: auto !important; }
+
+.hero-visual .detect-label {
+    position: static !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 4px 2px !important;
+    border-radius: 6px !important;
+    background: rgba(109,40,217,.26) !important;
+    color: #E9D5FF !important;
+    font-size: 9px !important;
+    font-weight: 750 !important;
+    line-height: 1.15 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    box-shadow: none !important;
+}
+
+.hero-visual .detect-label span { color: #67E8F9 !important; }
+
+.hero-visual .detect-object {
+    width: 100% !important;
+    height: 66px !important;
+    min-height: 66px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+    line-height: 1 !important;
+}
+
+/* Embed images from Python, size them consistently, preserve full image. */
+.hero-visual .detect-object img {
+    display: block !important;
+    width: 78px !important;
+    height: 62px !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    filter: drop-shadow(0 0 5px rgba(167,139,250,.6));
+}
+
+.hero-visual .hero-emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+    font-size: 42px;
+    line-height: 1;
+}
+
+@media (max-width: 900px) {
+    .hero-right { height: 390px !important; }
+    .hero-visual { height: 370px !important; }
+    .hero-visual .ai-lens { width: 160px !important; top: 55% !important; }
+    .hero-visual .detect-card { width: 88px !important; height: 88px !important; min-height: 88px !important; padding: 6px 4px !important; }
+    .hero-visual .detect-object { height: 54px !important; min-height: 54px !important; }
+    .hero-visual .detect-object img { width: 66px !important; height: 50px !important; }
+    .hero-visual .hero-emoji { height: 50px; font-size: 34px; }
+}
+
+@media (max-width: 520px) {
+    .hero-right { height: 340px !important; }
+    .hero-visual { height: 320px !important; }
+    .hero-visual .ai-lens { width: 135px !important; top: 54% !important; }
+    .hero-visual .detect-card { width: 76px !important; height: 76px !important; min-height: 76px !important; }
+    .hero-visual .detect-label { font-size: 7px !important; }
+    .hero-visual .detect-object { height: 44px !important; min-height: 44px !important; }
+    .hero-visual .detect-object img { width: 56px !important; height: 42px !important; }
+    .hero-visual .hero-emoji { height: 42px; font-size: 28px; }
+}

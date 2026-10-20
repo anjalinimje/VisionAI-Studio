@@ -1,0 +1,54 @@
+<svg width="64" height="64" viewBox="0 0 64 64"
+xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="iris" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- Eye outline -->
+
+  <path
+      d="M8 32
+         C16 18 28 12 32 12
+         C36 12 48 18 56 32
+         C48 46 36 52 32 52
+         C28 52 16 46 8 32Z"
+      fill="none"
+      stroke="url(#iris)"
+      stroke-width="3"
+      filter="url(#glow)"
+  />
+
+  <!-- Iris -->
+
+  <circle
+      cx="32"
+      cy="32"
+      r="10"
+      fill="url(#iris)"
+      filter="url(#glow)"
+  />
+
+  <!-- Pupil -->
+
+  <circle
+      cx="32"
+      cy="32"
+      r="4"
+      fill="#08111F"
+  />
+
+</svg>
