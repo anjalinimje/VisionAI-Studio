@@ -119,6 +119,4 @@ These are planned enhancements, not a claim that every feature is currently impl
 
 VisionAI Studio — Computer Vision Project
 
-## 📄 License
 
-No license has been specified yet. Add an appropriate license before explicitly allowing others to reuse, modify, or distribute this project.
